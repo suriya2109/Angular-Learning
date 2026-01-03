@@ -1,17 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ProductListComponent } from './components/product-list/product-list.component';
-
-interface I_Quote {
-  id: number;
-  quote: string;
-  author: string;
-}
+import { SubjectObservablesComponent } from './components/subject-observables/subject-observables.component';
 
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [CommonModule, ProductListComponent],
+  imports: [CommonModule,SubjectObservablesComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

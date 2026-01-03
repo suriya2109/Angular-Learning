@@ -1,0 +1,15 @@
+<div class="container">
+    <label for="name">Input Temperature</label>
+    <input id="name" type="number" (input)="setInputTemperature($event)" />
+
+    <span>
+  Current Temperature:
+  {{ displayTemperatureText }}°
+</span> @if (isTouched && !isCelsius) {
+    <button type="button" class="temperature-button" (click)="convertToCelsius()">
+        Convert To Celsius
+        </button> } @if (isTouched && isCelsius) {
+    <button type="button" class="temperature-button" (click)="convertToFahrenheit()">
+        Convert To Fahrenheit
+    </button> }
+</div>

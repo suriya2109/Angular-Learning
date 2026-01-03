@@ -1,0 +1,11 @@
+<section>
+    <div class="container">
+        Current Temperature: {{inputTemperature }} ° F
+        <div>
+            <img [ngSrc]="imageSrc" alt="sun" width="100" height="100" priority>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" (change)="handle_setInputTemperature($event)" />
+        </div>
+        <button type="button" title="text" (click)="handle_setTemperature()">Set Temperature</button>
+    </div>
+</section>
